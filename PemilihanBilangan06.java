@@ -3,15 +3,14 @@ import java.util.Scanner;
 public class PemilihanBilangan06{
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        
+        int angka;
+        String hasil;
 
         System.out.print("Masukkan sebuah angka: ");
-        int angka = input.nextInt();
+        angka = input.nextInt();    
 
-        if (angka % 2 == 0){
-            System.out.println("Angka " + angka + " termasuk bilangan genap");
-        }
-        else{
-            System.out.println("Angka " + angka + " termasuk bilangan ganjil");
-        }
+        hasil = (angka % 2 == 0) ? " termasuk bilangan genap" : " termasuk bilangan ganjil";
+        System.out.println("Angka " + angka + hasil );
     }
 }
